@@ -15,7 +15,7 @@ return (
       </a>
       <h1 className="title">ระบบจองคิว Online</h1>
       <h2 className="subtitle">โรงพยาบาล ABC</h2>   
-      <a className="button-home" type="button" onClick={() => router.push('th/login')}>       
+      <a className="button-home" type="button" onClick={() => router.push('en/login')}>       
         <button className="text-colour-button-a">
           <Image className="icon-main" src={EditIcon} alt="edit_icon" />
           <span className="button-text">จองเลย</span>

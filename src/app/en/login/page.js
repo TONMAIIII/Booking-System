@@ -7,16 +7,10 @@ import CheckMark from '../../../../public/check-mark.png'
 import React from 'react';
 import { useRef, useState, useEffect, useContext } from 'react';
 
-// import AuthContext from "../../../context/AuthProvider.jsx";
-
-// import axios from '../../api/axios';
-// const LOGIN_URL = '/auth';
-
 
 export default function Login() {
   const router = useRouter();
 
-//   const { setAuth } = useContext(AuthContext);
   
   const errRef = useRef();
   const userRef = useRef();
@@ -84,64 +78,41 @@ const handleSubmit = async (e) => {
           }
     }
 }
-
-  // const logint = async () => {
-  //   try {
-  //     const response = await fetch('/api/login', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({ username, password }),
-  //     });
-
-  //     const data = await response.json();
-
-  //     if (data.success) {
-  //       router.push('/home');
-  //     } else {
-  //       Swal.fire({
-  //         icon: 'error',
-  //         title: 'Oops...',
-  //         text: 'Invalid username or password. Please try again.',
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error('Login error:', error);
-  //   }
-  // };
-
   return (
     <main>
       <div>
         <h2 className="login-text">Login</h2>
         <div className="login-gui">
           <form id="loginForm">
-            <label htmlFor="username" className="padding-down-lable">
+            <label htmlFor="username" className="usernametext">
               Username:
             </label>
             <input
               type="text"
               id="username"
+              className="inputbox username-input"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
               ref={userRef} 
+              placeholder="Enter your Username"
             />
 
-            <label htmlFor="password" className="padding-space-lable">
+            <label htmlFor="password" className="passwordtext">
               Password:
             </label>
             <input
               type="password"
               id="password"
+              className="inputbox password-input"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              placeholder="Enter your Password"
             />
           </form>
-          <a className="button-home" type="button">
-            <button className="button" onClick={handleSubmit}>
+          <a className="login-box" type="button">
+            <button className="login" onClick={handleSubmit}>
               <Image
                 className="iconeditlogin"
                 src={CheckMark}

@@ -13,7 +13,7 @@ return (
       <a className="logo-brand" aria-label="หน้าหลัก">
         <Image className="logo-main" src={Logo} alt="mysticnetwork_logo" height="auto" width="auto"/>
       </a>
-      <h1 className="title">Online queue booking system</h1>
+      <h1 className="title">Online booking system</h1>
       <h2 className="subtitle">Hospital ABC</h2>   
       <a className="button-home" type="button" onClick={() => router.push('en/login')}>       
         <button className="text-colour-button-a">

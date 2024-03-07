@@ -90,7 +90,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Itim', cursive;
-  background: white;
+  background: #e0dad7;
 }
 
 a {
@@ -137,7 +137,7 @@ h1,h2 {
 .button-home {
   margin-top: 16px;
   margin-bottom: 15px;
-  width: 90px;
+  width: 100px;
   background-color: #66a8e1;
 
   border-radius: 6px;
@@ -187,17 +187,21 @@ label {
   font-size: 26px;
 }
 
-.padding-down-lable{
+.usernametext{
   margin-top: 10%;
+  color: #436fba;
+  font-weight: bold;
 }
 
-.padding-space-lable{
+.passwordtext{
   margin-top: 5%;
+  color: #436fba;
+  font-weight: bold;
 }
 
 
 .button {
-  width: 100px;
+  width: 100%;
   height: 45px;
   display: flex;
   align-items: center;
@@ -213,7 +217,47 @@ label {
 .button:hover {
   color: white;
   transform: scale(1.05);
+  cursor: pointer;
 }
+
+
+/* Login Button */
+.login {
+  width: 370px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  background-color: #123494;
+  /* border-color: white; */
+  border-radius: 12px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.login:hover {
+  color: white;
+  background-color: #1a3da1;
+  cursor: pointer;
+}
+
+.login-box {
+  width: 60%;
+  height:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  /* border-color: white; */
+  border-radius: 12px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+/* ------------------ */
 
 .text-colour-button-a {
   width: 100px;
@@ -234,7 +278,8 @@ label {
   background-color: darkgreen;
   border-color: darkgreen;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /* --------------------- */
@@ -258,7 +303,7 @@ label {
   background-color: darkgreen;
   border-color: darkgreen;
   color: white;
-  transform: scale(1.05);
+  cursor: pointer;
 }
 /* ---------------------- */
 .button-lang {
@@ -280,7 +325,7 @@ label {
 .login-gui {
   width: 45%;
   height: 50%;
-  background: #aec9e6;
+  /* background: #aec9e6; */
   flex-direction: column;
   border-radius: 8.5px;
   display: flex;
@@ -288,23 +333,26 @@ label {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .login-text{
   font-weight: bold;
   margin-top: 11%;
   /* margin-bottom: 5%; */
+  color: #436fba;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 38%;
+  /* justify-content: center; */
   text-align: center;
   font-size: 40px;
 }
 
+/* input box */
 
-input {
+.inputbox{
   width: 85%; 
   height: 40px;
   padding: 8px;
@@ -313,10 +361,28 @@ input {
   box-sizing: border-box;
   border-radius: 16px;
   font-size: 34px;
-  background-color: #e4edf7;
+  background-color: #f7f7f7;
   border: transparent;
+  color: black;
+  font-family: 'Itim', cursive;
 }
 
+.username-input::placeholder {
+  font-size: 0.5em;
+  color: rgb(99, 99, 99);    
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+
+.password-input::placeholder {
+  font-size: 0.5em;
+  color: rgb(99, 99, 99); 
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+/* -------------- */
 
 @media (prefers-color-scheme: dark) {
   html {

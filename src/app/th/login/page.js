@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
         <h2 className="login-text">เข้าสู่ระบบ</h2>
         <div className="login-gui">
           <form id="loginForm">
-            <label htmlFor="username" className="padding-down-lable">
+            <label htmlFor="username" className="usernametext">
               Username:
             </label>
             <input
@@ -103,7 +103,7 @@ const handleSubmit = async (e) => {
               ref={userRef} 
             />
 
-            <label htmlFor="password" className="padding-space-lable">
+            <label htmlFor="password" className="passwordtext">
               Password:
             </label>
             <input
