@@ -1,4 +1,4 @@
-// File: C:\Users\tkkun\OneDrive\Documents\GitHub\Booking-System\src\app\en\page.js
+// File: C:\Users\tkkun\OneDrive\Documents\GitHub\Booking-System\frontend\src\app\en\page.js
 import * as entry from '../../../../src/app/en/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
