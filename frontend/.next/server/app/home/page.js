@@ -89,6 +89,72 @@ module.exports = require("next/dist\\client\\components\\static-generation-async
 
 /***/ }),
 
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -97,6 +163,28 @@ module.exports = require("next/dist\\client\\components\\static-generation-async
 
 "use strict";
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
 
 /***/ }),
 
@@ -119,6 +207,17 @@ module.exports = require("url");
 
 "use strict";
 module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -174,6 +273,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "(ssr)/./src/app/api/sqldata.js":
+/*!********************************!*\
+  !*** ./src/app/api/sqldata.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   fetchUserData: () => (/* binding */ fetchUserData)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n\nconst fetchUserData = async ()=>{\n    try {\n        const response = await axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get(\"YOUR_API_ENDPOINT\"); // Replace with your actual API endpoint\n        return response.data;\n    } catch (error) {\n        console.error(\"Error fetching user data:\", error);\n        throw error;\n    }\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2FwaS9zcWxkYXRhLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQTBCO0FBRW5CLE1BQU1DLGdCQUFnQjtJQUMzQixJQUFJO1FBQ0YsTUFBTUMsV0FBVyxNQUFNRiw2Q0FBS0EsQ0FBQ0csR0FBRyxDQUFDLHNCQUFzQix3Q0FBd0M7UUFDL0YsT0FBT0QsU0FBU0UsSUFBSTtJQUN0QixFQUFFLE9BQU9DLE9BQU87UUFDZEMsUUFBUUQsS0FBSyxDQUFDLDZCQUE2QkE7UUFDM0MsTUFBTUE7SUFDUjtBQUNGLEVBQUUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ib29raW5nLXN5c3RlbS8uL3NyYy9hcHAvYXBpL3NxbGRhdGEuanM/NDA0NiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5cclxuZXhwb3J0IGNvbnN0IGZldGNoVXNlckRhdGEgPSBhc3luYyAoKSA9PiB7XHJcbiAgdHJ5IHtcclxuICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MuZ2V0KCdZT1VSX0FQSV9FTkRQT0lOVCcpOyAvLyBSZXBsYWNlIHdpdGggeW91ciBhY3R1YWwgQVBJIGVuZHBvaW50XHJcbiAgICByZXR1cm4gcmVzcG9uc2UuZGF0YTtcclxuICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgY29uc29sZS5lcnJvcignRXJyb3IgZmV0Y2hpbmcgdXNlciBkYXRhOicsIGVycm9yKTtcclxuICAgIHRocm93IGVycm9yO1xyXG4gIH1cclxufTsiXSwibmFtZXMiOlsiYXhpb3MiLCJmZXRjaFVzZXJEYXRhIiwicmVzcG9uc2UiLCJnZXQiLCJkYXRhIiwiZXJyb3IiLCJjb25zb2xlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/api/sqldata.js\n");
+
+/***/ }),
+
 /***/ "(ssr)/./src/app/home/page.js":
 /*!******************************!*\
   !*** ./src/app/home/page.js ***!
@@ -181,7 +291,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/image */ \"(ssr)/./node_modules/next/image.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/navigation.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _public_edit_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/edit.png */ \"(ssr)/./public/edit.png\");\n/* harmony import */ var _public_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../public/logo.png */ \"(ssr)/./public/logo.png\");\n/* harmony import */ var _LanguageSwitcher__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../LanguageSwitcher */ \"(ssr)/./src/app/LanguageSwitcher.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\nconst HomePage = ()=>{\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                    className: \"logo-brand\",\n                    \"aria-label\": \"หน้าหลัก\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {\n                        className: \"logo-main\",\n                        src: _public_logo_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n                        alt: \"mysticnetwork_logo\",\n                        height: \"auto\",\n                        width: \"auto\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                        lineNumber: 14,\n                        columnNumber: 9\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 13,\n                    columnNumber: 7\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"title\",\n                    children: \"ระบบจองคิว Online\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 16,\n                    columnNumber: 7\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                    className: \"subtitle\",\n                    children: \"โรงพยาบาล ABC\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 17,\n                    columnNumber: 7\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                    className: \"button-home\",\n                    type: \"button\",\n                    onClick: ()=>router.push(\"en/login\"),\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        className: \"text-colour-button-a\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {\n                                className: \"icon-main\",\n                                src: _public_edit_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n                                alt: \"edit_icon\"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                                lineNumber: 20,\n                                columnNumber: 11\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                className: \"button-text\",\n                                children: \"จองเลย\"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                                lineNumber: 21,\n                                columnNumber: 11\n                            }, undefined)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                        lineNumber: 19,\n                        columnNumber: 9\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 18,\n                    columnNumber: 7\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_LanguageSwitcher__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n                    Lang: \"en\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 25,\n                    columnNumber: 7\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n            lineNumber: 12,\n            columnNumber: 5\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n        lineNumber: 11,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2hvbWUvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQUMrQjtBQUNhO0FBQ0k7QUFDSjtBQUNPO0FBRW5ELE1BQU1LLFdBQVc7SUFDZixNQUFNQyxTQUFTTCwwREFBU0E7SUFDMUIscUJBQ0ksOERBQUNNO2tCQUNELDRFQUFDQzs7OEJBQ0MsOERBQUNDO29CQUFFQyxXQUFVO29CQUFhQyxjQUFXOzhCQUNuQyw0RUFBQ1gsbURBQUtBO3dCQUFDVSxXQUFVO3dCQUFZRSxLQUFLVCx3REFBSUE7d0JBQUVVLEtBQUk7d0JBQXFCQyxRQUFPO3dCQUFPQyxPQUFNOzs7Ozs7Ozs7Ozs4QkFFdkYsOERBQUNDO29CQUFHTixXQUFVOzhCQUFROzs7Ozs7OEJBQ3RCLDhEQUFDTztvQkFBR1AsV0FBVTs4QkFBVzs7Ozs7OzhCQUN6Qiw4REFBQ0Q7b0JBQUVDLFdBQVU7b0JBQWNRLE1BQUs7b0JBQVNDLFNBQVMsSUFBTWIsT0FBT2MsSUFBSSxDQUFDOzhCQUNsRSw0RUFBQ0M7d0JBQU9YLFdBQVU7OzBDQUNoQiw4REFBQ1YsbURBQUtBO2dDQUFDVSxXQUFVO2dDQUFZRSxLQUFLVix3REFBUUE7Z0NBQUVXLEtBQUk7Ozs7OzswQ0FDaEQsOERBQUNTO2dDQUFLWixXQUFVOzBDQUFjOzs7Ozs7Ozs7Ozs7Ozs7Ozs4QkFJbEMsOERBQUNOLHlEQUFnQkE7b0JBQUNtQixNQUFLOzs7Ozs7Ozs7Ozs7Ozs7OztBQUk3QjtBQUVBLGlFQUFlbEIsUUFBUUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Jvb2tpbmctc3lzdGVtLy4vc3JjL2FwcC9ob21lL3BhZ2UuanM/NTg0MyJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCdcclxuaW1wb3J0IEltYWdlIGZyb20gXCJuZXh0L2ltYWdlXCI7XHJcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7XHJcbmltcG9ydCBFZGl0SWNvbiBmcm9tICcuLi8uLi8uLi9wdWJsaWMvZWRpdC5wbmcnO1xyXG5pbXBvcnQgTG9nbyBmcm9tICcuLi8uLi8uLi9wdWJsaWMvbG9nby5wbmcnO1xyXG5pbXBvcnQgTGFuZ3VhZ2VTd2l0Y2hlciBmcm9tICcuLi9MYW5ndWFnZVN3aXRjaGVyJztcclxuXHJcbmNvbnN0IEhvbWVQYWdlID0gKCkgPT4ge1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG5yZXR1cm4gKFxyXG4gICAgPG1haW4+ICBcclxuICAgIDxkaXY+XHJcbiAgICAgIDxhIGNsYXNzTmFtZT1cImxvZ28tYnJhbmRcIiBhcmlhLWxhYmVsPVwi4Lir4LiZ4LmJ4Liy4Lir4Lil4Lix4LiBXCI+XHJcbiAgICAgICAgPEltYWdlIGNsYXNzTmFtZT1cImxvZ28tbWFpblwiIHNyYz17TG9nb30gYWx0PVwibXlzdGljbmV0d29ya19sb2dvXCIgaGVpZ2h0PVwiYXV0b1wiIHdpZHRoPVwiYXV0b1wiLz5cclxuICAgICAgPC9hPlxyXG4gICAgICA8aDEgY2xhc3NOYW1lPVwidGl0bGVcIj7guKPguLDguJrguJrguIjguK3guIfguITguLTguKcgT25saW5lPC9oMT5cclxuICAgICAgPGgyIGNsYXNzTmFtZT1cInN1YnRpdGxlXCI+4LmC4Lij4LiH4Lie4Lii4Liy4Lia4Liy4LilIEFCQzwvaDI+ICAgXHJcbiAgICAgIDxhIGNsYXNzTmFtZT1cImJ1dHRvbi1ob21lXCIgdHlwZT1cImJ1dHRvblwiIG9uQ2xpY2s9eygpID0+IHJvdXRlci5wdXNoKCdlbi9sb2dpbicpfT4gICAgICAgXHJcbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJ0ZXh0LWNvbG91ci1idXR0b24tYVwiPlxyXG4gICAgICAgICAgPEltYWdlIGNsYXNzTmFtZT1cImljb24tbWFpblwiIHNyYz17RWRpdEljb259IGFsdD1cImVkaXRfaWNvblwiIC8+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJidXR0b24tdGV4dFwiPuC4iOC4reC4h+C5gOC4peC4ojwvc3Bhbj5cclxuICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgPC9hPiAgIFxyXG5cclxuICAgICAgPExhbmd1YWdlU3dpdGNoZXIgTGFuZz1cImVuXCIgLz5cclxuICAgIDwvZGl2PiAgXHJcbiAgPC9tYWluPlxyXG4gICk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEhvbWVQYWdlOyJdLCJuYW1lcyI6WyJJbWFnZSIsInVzZVJvdXRlciIsIkVkaXRJY29uIiwiTG9nbyIsIkxhbmd1YWdlU3dpdGNoZXIiLCJIb21lUGFnZSIsInJvdXRlciIsIm1haW4iLCJkaXYiLCJhIiwiY2xhc3NOYW1lIiwiYXJpYS1sYWJlbCIsInNyYyIsImFsdCIsImhlaWdodCIsIndpZHRoIiwiaDEiLCJoMiIsInR5cGUiLCJvbkNsaWNrIiwicHVzaCIsImJ1dHRvbiIsInNwYW4iLCJMYW5nIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/home/page.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _api_sqldata_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/sqldata.js */ \"(ssr)/./src/app/api/sqldata.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/image */ \"(ssr)/./node_modules/next/image.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/navigation.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _public_edit_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../public/edit.png */ \"(ssr)/./public/edit.png\");\n/* harmony import */ var _public_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../public/logo.png */ \"(ssr)/./public/logo.png\");\n/* harmony import */ var _LanguageSwitcher__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../LanguageSwitcher */ \"(ssr)/./src/app/LanguageSwitcher.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\n\n\nconst HomePage = ()=>{\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_4__.useRouter)();\n    const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const fetchUser = async ()=>{\n            try {\n                const userData = await (0,_api_sqldata_js__WEBPACK_IMPORTED_MODULE_2__.fetchUserData)();\n                setUser(userData);\n            } catch (error) {}\n        };\n        fetchUser();\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                    className: \"logo-brand\",\n                    \"aria-label\": \"หน้าหลัก\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {\n                        className: \"logo-main\",\n                        src: _public_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n                        alt: \"mysticnetwork_logo\",\n                        height: \"auto\",\n                        width: \"auto\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                        lineNumber: 31,\n                        columnNumber: 11\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 30,\n                    columnNumber: 9\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"title\",\n                    children: \"HELLO\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 33,\n                    columnNumber: 9\n                }, undefined),\n                user && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            children: [\n                                \"Email: \",\n                                user.email\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                            lineNumber: 36,\n                            columnNumber: 13\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            children: [\n                                \"Name: \",\n                                user.name\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                            lineNumber: 37,\n                            columnNumber: 13\n                        }, undefined)\n                    ]\n                }, void 0, true, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 35,\n                    columnNumber: 11\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n            lineNumber: 29,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n        lineNumber: 28,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2hvbWUvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7OztBQUM0QztBQUNNO0FBQ25CO0FBQ2E7QUFDSTtBQUNKO0FBQ087QUFHbkQsTUFBTVEsV0FBVztJQUNmLE1BQU1DLFNBQVNMLDBEQUFTQTtJQUN4QixNQUFNLENBQUNNLE1BQU1DLFFBQVEsR0FBR1YsK0NBQVFBLENBQUM7SUFFakNELGdEQUFTQSxDQUFDO1FBQ1IsTUFBTVksWUFBWTtZQUNoQixJQUFJO2dCQUNGLE1BQU1DLFdBQVcsTUFBTVgsOERBQWFBO2dCQUNwQ1MsUUFBUUU7WUFDVixFQUFFLE9BQU9DLE9BQU8sQ0FDaEI7UUFDRjtRQUVBRjtJQUNGLEdBQUcsRUFBRTtJQUVMLHFCQUNFLDhEQUFDRztrQkFDQyw0RUFBQ0M7OzhCQUNDLDhEQUFDQztvQkFBRUMsV0FBVTtvQkFBYUMsY0FBVzs4QkFDbkMsNEVBQUNoQixtREFBS0E7d0JBQUNlLFdBQVU7d0JBQVlFLEtBQUtkLHdEQUFJQTt3QkFBRWUsS0FBSTt3QkFBcUJDLFFBQU87d0JBQU9DLE9BQU07Ozs7Ozs7Ozs7OzhCQUV2Riw4REFBQ0M7b0JBQUdOLFdBQVU7OEJBQVE7Ozs7OztnQkFDckJSLHNCQUNDLDhEQUFDTTs7c0NBQ0MsOERBQUNTOztnQ0FBRTtnQ0FBUWYsS0FBS2dCLEtBQUs7Ozs7Ozs7c0NBQ3JCLDhEQUFDRDs7Z0NBQUU7Z0NBQU9mLEtBQUtpQixJQUFJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNL0I7QUFFQSxpRUFBZW5CLFFBQVFBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ib29raW5nLXN5c3RlbS8uL3NyYy9hcHAvaG9tZS9wYWdlLmpzPzU4NDMiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnXHJcbmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7IGZldGNoVXNlckRhdGEgfSBmcm9tICcuLi9hcGkvc3FsZGF0YS5qcyc7IFxyXG5pbXBvcnQgSW1hZ2UgZnJvbSBcIm5leHQvaW1hZ2VcIjtcclxuaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJztcclxuaW1wb3J0IEVkaXRJY29uIGZyb20gJy4uLy4uLy4uL3B1YmxpYy9lZGl0LnBuZyc7XHJcbmltcG9ydCBMb2dvIGZyb20gJy4uLy4uLy4uL3B1YmxpYy9sb2dvLnBuZyc7XHJcbmltcG9ydCBMYW5ndWFnZVN3aXRjaGVyIGZyb20gJy4uL0xhbmd1YWdlU3dpdGNoZXInO1xyXG5cclxuXHJcbmNvbnN0IEhvbWVQYWdlID0gKCkgPT4ge1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG4gIGNvbnN0IFt1c2VyLCBzZXRVc2VyXSA9IHVzZVN0YXRlKG51bGwpO1xyXG5cclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgY29uc3QgZmV0Y2hVc2VyID0gYXN5bmMgKCkgPT4ge1xyXG4gICAgICB0cnkge1xyXG4gICAgICAgIGNvbnN0IHVzZXJEYXRhID0gYXdhaXQgZmV0Y2hVc2VyRGF0YSgpO1xyXG4gICAgICAgIHNldFVzZXIodXNlckRhdGEpO1xyXG4gICAgICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgICB9XHJcbiAgICB9O1xyXG5cclxuICAgIGZldGNoVXNlcigpO1xyXG4gIH0sIFtdKTsgXHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8bWFpbj5cclxuICAgICAgPGRpdj5cclxuICAgICAgICA8YSBjbGFzc05hbWU9XCJsb2dvLWJyYW5kXCIgYXJpYS1sYWJlbD1cIuC4q+C4meC5ieC4suC4q+C4peC4seC4gVwiPlxyXG4gICAgICAgICAgPEltYWdlIGNsYXNzTmFtZT1cImxvZ28tbWFpblwiIHNyYz17TG9nb30gYWx0PVwibXlzdGljbmV0d29ya19sb2dvXCIgaGVpZ2h0PVwiYXV0b1wiIHdpZHRoPVwiYXV0b1wiIC8+XHJcbiAgICAgICAgPC9hPlxyXG4gICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0aXRsZVwiPkhFTExPPC9oMT5cclxuICAgICAgICB7dXNlciAmJiAoXHJcbiAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8cD5FbWFpbDoge3VzZXIuZW1haWx9PC9wPlxyXG4gICAgICAgICAgICA8cD5OYW1lOiB7dXNlci5uYW1lfTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICl9XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9tYWluPlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBIb21lUGFnZTsiXSwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJmZXRjaFVzZXJEYXRhIiwiSW1hZ2UiLCJ1c2VSb3V0ZXIiLCJFZGl0SWNvbiIsIkxvZ28iLCJMYW5ndWFnZVN3aXRjaGVyIiwiSG9tZVBhZ2UiLCJyb3V0ZXIiLCJ1c2VyIiwic2V0VXNlciIsImZldGNoVXNlciIsInVzZXJEYXRhIiwiZXJyb3IiLCJtYWluIiwiZGl2IiwiYSIsImNsYXNzTmFtZSIsImFyaWEtbGFiZWwiLCJzcmMiLCJhbHQiLCJoZWlnaHQiLCJ3aWR0aCIsImgxIiwicCIsImVtYWlsIiwibmFtZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/home/page.js\n");
 
 /***/ }),
 
@@ -192,7 +302,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"c82db7e3c3ff\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2dsb2JhbHMuY3NzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxjQUFjO0FBQzdCLElBQUksS0FBVSxFQUFFLEVBQXVCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYm9va2luZy1zeXN0ZW0vLi9zcmMvYXBwL2dsb2JhbHMuY3NzP2NlYmQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCJjODJkYjdlM2MzZmZcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/app/globals.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"2d20d06fa55a\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2dsb2JhbHMuY3NzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxjQUFjO0FBQzdCLElBQUksS0FBVSxFQUFFLEVBQXVCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYm9va2luZy1zeXN0ZW0vLi9zcmMvYXBwL2dsb2JhbHMuY3NzP2NlYmQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCIyZDIwZDA2ZmE1NWFcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/app/globals.css\n");
 
 /***/ }),
 
@@ -276,7 +386,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.js&appDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/delayed-stream"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.js&appDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

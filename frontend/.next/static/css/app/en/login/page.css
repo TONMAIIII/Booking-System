@@ -93,7 +93,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Itim', cursive;
-  background: #e0dad7;
+  background: #e0dad7; 
 }
 
 a {
@@ -188,12 +188,19 @@ label {
 
 .usernametext{
   margin-left: -5%;
-  margin-top: 10%;
+  margin-top: 5%;
   color: #436fba;
   font-weight: bold;
 }
 
 .passwordtext{
+  margin-left: -5%;
+  margin-top: 5%;
+  color: #436fba;
+  font-weight: bold;
+}
+
+.emailtext{
   margin-left: -5%;
   margin-top: 5%;
   color: #436fba;
@@ -317,7 +324,84 @@ label {
   z-index: 999;
 }
 /* ------------------- */
+.line-sep{
+  font-weight: bold;
+  color: #436fba;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+}
 
+
+/* ---------------reg --------------- */
+.registration-text{
+  font-weight: bold;
+  color: #436fba;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%);
+}
+
+.registration-gui{
+  width: 45%;
+  height: 50%;
+  
+  /* background: #aec9e6; */
+  flex-direction: column;
+  border-radius: 8.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+.registration-box{
+  width: 60%;
+  height:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.register {
+  width: 370px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  background-color: #123494;
+  border: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.register:hover {
+  color: white;
+  background-color: #1a3da1;
+  cursor: pointer;
+}
+/* ---------------    --------------- */
+/* ----------------- */
 .iconeditlogin{
   margin-right: 5px;
   vertical-align: top;
@@ -335,21 +419,21 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.login-text{
+
+.login-text {
   font-weight: bold;
-  margin-top: 11%;
-  /* margin-bottom: 5%; */
   color: #436fba;
   height: auto;
   display: flex;
   align-items: center;
-  margin-left: 38%;
-  /* justify-content: center; */
+  right: 100%;
+  transform: translate(-120%);
   text-align: center;
   font-size: 40px;
 }
@@ -380,6 +464,14 @@ label {
 }
 
 .password-input::placeholder {
+  font-size: 0.5em;
+  color: rgb(99, 99, 99); 
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+
+.email-input::placeholder {
   font-size: 0.5em;
   color: rgb(99, 99, 99); 
   position: absolute;

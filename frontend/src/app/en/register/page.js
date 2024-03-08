@@ -9,7 +9,8 @@ import { useRef, useState, useEffect, useContext } from 'react';
 
 import axios from '../../api/axios.js';
 
-const Registration = () => {
+export default function Registration() {
+  const router = useRouter();
   const errRef = useRef();
   const userRef = useRef();
   const [username, setUsername] = useState('');
@@ -68,21 +69,21 @@ const Registration = () => {
   return (
     <main>
       <div>
-        <h2 className="registration-text">Registration</h2>
         <div className="registration-gui">
+        <h2 className="registration-text">Registration</h2>
           <form id="registrationForm">
-            <label htmlFor="username" className="usernametext">
-              Username:
+
+          <label htmlFor="email" className="emailtext">
+              Email:
             </label>
             <input
-              type="text"
-              id="username"
-              className="inputbox username-input"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              type="email"
+              id="email"
+              className="inputbox email-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
-              ref={userRef}
-              placeholder="Enter your Username"
+              placeholder="Enter your Email"
             />
 
             <label htmlFor="password" className="passwordtext">
@@ -98,23 +99,24 @@ const Registration = () => {
               placeholder="Enter your Password"
             />
 
-            <label htmlFor="email" className="emailtext">
-              Email:
+            <label htmlFor="username" className="usernametext">
+              Username:
             </label>
             <input
-              type="email"
-              id="email"
-              className="inputbox email-input"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              id="username"
+              className="inputbox username-input"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
-              placeholder="Enter your Email"
+              ref={userRef}
+              placeholder="Enter your Username"
             />
           </form>
           <a className="registration-box" type="button">
             <button className="register" onClick={handleSubmit}>
               <Image
-                className="iconeditregister"
+                className="iconeditlogin"
                 src={CheckMark}
                 alt="check-mark-icon"
                 height="auto"
@@ -123,10 +125,21 @@ const Registration = () => {
               Register
             </button>
           </a>
+          <h2 className="line-sep">or</h2>
+          <a className="login-box" type="button">
+            <button className="login" onClick={() => router.push(`/en/login`)}>
+              <Image
+                className="iconeditlogin"
+                src={CheckMark}
+                alt="check-mark-icon"
+                height="auto"
+                width="auto"
+              />
+              Log In
+            </button>
+          </a>
         </div>
       </div>
     </main>
   );
 };
-
-export default Registration;

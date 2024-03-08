@@ -22,6 +22,22 @@ def get_mysql_connection():
         print(e)
         return None
 
+def validate_input(email, password, username):
+    email_pattern = re.compile(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')  # Email validation pattern
+    username_pattern = re.compile(r'^[a-zA-Z0-9_-]+$')  # Username validation pattern
+
+    if not email_pattern.match(email):
+        return False
+
+    if not username_pattern.match(username):
+        return False
+
+    # Additional checks for password (you can customize this based on your requirements)
+    if len(password) < 8:
+        return False
+
+    return True
+
 @app.route('/api/register', methods=['POST'])
 def register():
     try:
@@ -33,6 +49,10 @@ def register():
         username = data.get('username')
         password = data.get('password')
         email = data.get('email')
+
+        # Validate input
+        if not validate_input(email, password, username):
+            return jsonify({'success': False, 'error': 'Invalid input'}), 400, {'Access-Control-Allow-Credentials': 'true'}
 
         # Generate a random user ID with 5 digits
         user_id = random.randint(10000, 99999)

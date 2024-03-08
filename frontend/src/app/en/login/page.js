@@ -7,7 +7,9 @@ import CheckMark from '../../../../public/check-mark.png'
 import React from 'react';
 import { useRef, useState, useEffect, useContext } from 'react';
 
+
 import axios from '../../api/axios.js';
+import GoogleLoginButton from '../../components/GoogleLoginButton';
 
 
 export default function Login() {
@@ -29,6 +31,7 @@ export default function Login() {
 useEffect(() => {
     setErrMsg('');
 }, [username, password])
+
 
 const handleSubmit = async (e) => {
     e.preventDefault();
@@ -72,18 +75,19 @@ const handleSubmit = async (e) => {
               text: 'Invalid username or password. Please try again.',
             });
           }
-          // console.error(err);
     }
 }
+
+
 
   return (
     <main>
       <div>
-        <h2 className="login-text">Login</h2>
         <div className="login-gui">
+        <h2 className="login-text">Login</h2>
           <form id="loginForm">
             <label htmlFor="username" className="usernametext">
-              Username:
+              Email:
             </label>
             <input
               type="text"
@@ -93,7 +97,7 @@ const handleSubmit = async (e) => {
               onChange={(e) => setUsername(e.target.value)}
               required
               ref={userRef} 
-              placeholder="Enter your Username"
+              placeholder="Enter your Email"
             />
 
             <label htmlFor="password" className="passwordtext">
@@ -121,6 +125,19 @@ const handleSubmit = async (e) => {
               Login
             </button>
           </a>
+          <h2 className="line-sep">or</h2>
+          <a className="login-box" type="button">
+            <button className="login" onClick={() => router.push(`/en/register`)}>
+              <Image
+                className="iconeditlogin"
+                src={CheckMark}
+                alt="check-mark-icon"
+                height="auto"
+                width="auto"
+              />
+              Register
+            </button>
+          </a>          
         </div>
       </div>
     </main>
