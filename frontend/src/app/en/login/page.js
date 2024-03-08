@@ -38,19 +38,21 @@ const handleSubmit = async (e) => {
     try {
       const response = await axios.post("http://localhost:5000/api/login",{ username, password });
     
-      console.log(response);
-      console.log(JSON.stringify({ username, password }));
+      console.log(response);    
+
+      // console.log(JSON.stringify({ username, password }));
       if (response.status === 200) {
-        router.push('/home');
-        
+        const userId = username;
         Swal.fire({
           icon: 'success',
           title: 'Login Successful!',
           text: 'Redirecting...',
         });
+
+        router.push(`/home/${userId}`);
       }
     } catch (err) {
-          if (!err?.response) {      
+          if (err.response?.status === 500) {      
             Swal.fire({
               icon: 'error',
               title: 'Oops...',
@@ -72,7 +74,7 @@ const handleSubmit = async (e) => {
             Swal.fire({
               icon: 'error',
               title: 'Oops...',
-              text: 'Invalid username or password. Please try again.',
+              text: 'Hmm??!?!?',
             });
           }
     }

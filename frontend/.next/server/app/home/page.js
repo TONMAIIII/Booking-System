@@ -89,72 +89,6 @@ module.exports = require("next/dist\\client\\components\\static-generation-async
 
 /***/ }),
 
-/***/ "assert":
-/*!*************************!*\
-  !*** external "assert" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("assert");
-
-/***/ }),
-
-/***/ "events":
-/*!*************************!*\
-  !*** external "events" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("events");
-
-/***/ }),
-
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ "http":
-/*!***********************!*\
-  !*** external "http" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("http");
-
-/***/ }),
-
-/***/ "https":
-/*!************************!*\
-  !*** external "https" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("https");
-
-/***/ }),
-
-/***/ "net":
-/*!**********************!*\
-  !*** external "net" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("net");
-
-/***/ }),
-
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -166,28 +100,6 @@ module.exports = require("path");
 
 /***/ }),
 
-/***/ "stream":
-/*!*************************!*\
-  !*** external "stream" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("stream");
-
-/***/ }),
-
-/***/ "tty":
-/*!**********************!*\
-  !*** external "tty" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("tty");
-
-/***/ }),
-
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -196,28 +108,6 @@ module.exports = require("tty");
 
 "use strict";
 module.exports = require("url");
-
-/***/ }),
-
-/***/ "util":
-/*!***********************!*\
-  !*** external "util" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("util");
-
-/***/ }),
-
-/***/ "zlib":
-/*!***********************!*\
-  !*** external "zlib" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("zlib");
 
 /***/ }),
 
@@ -262,28 +152,6 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__web
 
 /***/ }),
 
-/***/ "(ssr)/./src/app/LanguageSwitcher.js":
-/*!*************************************!*\
-  !*** ./src/app/LanguageSwitcher.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/navigation.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_1__);\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\nconst LanguageSwitcher = ({ Lang })=>{\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_1__.useRouter)();\n    const changeLanguage = (language)=>{\n        console.log(\"Current Locale:\", router.locale);\n        router.push(language);\n    };\n    let languageButton;\n    if (Lang == \"th\") {\n        languageButton = /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n            onClick: ()=>changeLanguage(\"th\"),\n            className: \"button-lang text-colour-button-lang\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                children: \"\\uD83C\\uDDF9\\uD83C\\uDDED\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n                lineNumber: 15,\n                columnNumber: 17\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n            lineNumber: 14,\n            columnNumber: 13\n        }, undefined);\n    } else if (Lang == \"en\") {\n        languageButton = /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n            onClick: ()=>changeLanguage(\"en\"),\n            className: \"button-lang text-colour-button-lang\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                children: \"\\uD83C\\uDDFA\\uD83C\\uDDF8\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n                lineNumber: 22,\n                columnNumber: 17\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n            lineNumber: 21,\n            columnNumber: 13\n        }, undefined);\n    } else {\n        languageButton = /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n            onClick: ()=>changeLanguage(\"404\"),\n            className: \"button-lang text-colour-button-lang\",\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                children: \"404\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n                lineNumber: 29,\n                columnNumber: 17\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n            lineNumber: 28,\n            columnNumber: 13\n        }, undefined);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n        children: languageButton\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\LanguageSwitcher.js\",\n        lineNumber: 35,\n        columnNumber: 9\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LanguageSwitcher);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL0xhbmd1YWdlU3dpdGNoZXIuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQzRDO0FBQzVDLE1BQU1DLG1CQUFtQixDQUFDLEVBQUVDLElBQUksRUFBRTtJQUM5QixNQUFNQyxTQUFTSCwwREFBU0E7SUFFeEIsTUFBTUksaUJBQWlCLENBQUNDO1FBQ3hCQyxRQUFRQyxHQUFHLENBQUMsbUJBQW1CSixPQUFPSyxNQUFNO1FBQzFDTCxPQUFPTSxJQUFJLENBQUNKO0lBQ2Q7SUFFQSxJQUFJSztJQUNKLElBQUlSLFFBQVEsTUFBSztRQUNiUSwrQkFDSSw4REFBQ0M7WUFBT0MsU0FBUyxJQUFNUixlQUFlO1lBQVFTLFdBQVU7c0JBQ3BELDRFQUFDQzswQkFBSzs7Ozs7Ozs7Ozs7SUFHbEIsT0FDSyxJQUFJWixRQUFRLE1BQUs7UUFDbEJRLCtCQUNJLDhEQUFDQztZQUFPQyxTQUFTLElBQU1SLGVBQWU7WUFBUVMsV0FBVTtzQkFDcEQsNEVBQUNDOzBCQUFLOzs7Ozs7Ozs7OztJQUdsQixPQUNLO1FBQ0RKLCtCQUNJLDhEQUFDQztZQUFPQyxTQUFTLElBQU1SLGVBQWU7WUFBU1MsV0FBVTtzQkFDckQsNEVBQUNDOzBCQUFLOzs7Ozs7Ozs7OztJQUdsQjtJQUVBLHFCQUNJLDhEQUFDQztrQkFDSUw7Ozs7OztBQUdYO0FBRUEsaUVBQWVULGdCQUFnQkEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Jvb2tpbmctc3lzdGVtLy4vc3JjL2FwcC9MYW5ndWFnZVN3aXRjaGVyLmpzPzdlNzUiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnXHJcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7XHJcbmNvbnN0IExhbmd1YWdlU3dpdGNoZXIgPSAoeyBMYW5nIH0pID0+IHtcclxuICAgIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG5cclxuICAgIGNvbnN0IGNoYW5nZUxhbmd1YWdlID0gKGxhbmd1YWdlKSA9PiB7XHJcbiAgICBjb25zb2xlLmxvZygnQ3VycmVudCBMb2NhbGU6Jywgcm91dGVyLmxvY2FsZSk7XHJcbiAgICAgIHJvdXRlci5wdXNoKGxhbmd1YWdlKTtcclxuICAgIH07XHJcblxyXG4gICAgbGV0IGxhbmd1YWdlQnV0dG9uXHJcbiAgICBpZiAoTGFuZyA9PSBcInRoXCIpe1xyXG4gICAgICAgIGxhbmd1YWdlQnV0dG9uID0gKFxyXG4gICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IGNoYW5nZUxhbmd1YWdlKCd0aCcpfSAgY2xhc3NOYW1lPVwiYnV0dG9uLWxhbmcgdGV4dC1jb2xvdXItYnV0dG9uLWxhbmdcIj5cclxuICAgICAgICAgICAgICAgIDxzcGFuPvCfh7nwn4etPC9zcGFuPlxyXG4gICAgICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgICApXHJcbiAgICB9ICAgIFxyXG4gICAgZWxzZSBpZiAoTGFuZyA9PSBcImVuXCIpe1xyXG4gICAgICAgIGxhbmd1YWdlQnV0dG9uID0gKFxyXG4gICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IGNoYW5nZUxhbmd1YWdlKCdlbicpfSAgY2xhc3NOYW1lPVwiYnV0dG9uLWxhbmcgdGV4dC1jb2xvdXItYnV0dG9uLWxhbmdcIj5cclxuICAgICAgICAgICAgICAgIDxzcGFuPvCfh7rwn4e4PC9zcGFuPlxyXG4gICAgICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgICApXHJcbiAgICB9ICAgIFxyXG4gICAgZWxzZSB7XHJcbiAgICAgICAgbGFuZ3VhZ2VCdXR0b24gPSAoXHJcbiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gY2hhbmdlTGFuZ3VhZ2UoJzQwNCcpfSAgY2xhc3NOYW1lPVwiYnV0dG9uLWxhbmcgdGV4dC1jb2xvdXItYnV0dG9uLWxhbmdcIj5cclxuICAgICAgICAgICAgICAgIDxzcGFuPjQwNDwvc3Bhbj5cclxuICAgICAgICAgICAgPC9idXR0b24+XHJcbiAgICAgICAgKVxyXG4gICAgfVxyXG5cclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPGE+XHJcbiAgICAgICAgICAgIHtsYW5ndWFnZUJ1dHRvbn1cclxuICAgICAgICA8L2E+XHJcbiAgICApO1xyXG4gIH07XHJcbiAgXHJcbiAgZXhwb3J0IGRlZmF1bHQgTGFuZ3VhZ2VTd2l0Y2hlcjsiXSwibmFtZXMiOlsidXNlUm91dGVyIiwiTGFuZ3VhZ2VTd2l0Y2hlciIsIkxhbmciLCJyb3V0ZXIiLCJjaGFuZ2VMYW5ndWFnZSIsImxhbmd1YWdlIiwiY29uc29sZSIsImxvZyIsImxvY2FsZSIsInB1c2giLCJsYW5ndWFnZUJ1dHRvbiIsImJ1dHRvbiIsIm9uQ2xpY2siLCJjbGFzc05hbWUiLCJzcGFuIiwiYSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/LanguageSwitcher.js\n");
-
-/***/ }),
-
-/***/ "(ssr)/./src/app/api/sqldata.js":
-/*!********************************!*\
-  !*** ./src/app/api/sqldata.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   fetchUserData: () => (/* binding */ fetchUserData)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n\nconst fetchUserData = async ()=>{\n    try {\n        const response = await axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get(\"YOUR_API_ENDPOINT\"); // Replace with your actual API endpoint\n        return response.data;\n    } catch (error) {\n        console.error(\"Error fetching user data:\", error);\n        throw error;\n    }\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2FwaS9zcWxkYXRhLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQTBCO0FBRW5CLE1BQU1DLGdCQUFnQjtJQUMzQixJQUFJO1FBQ0YsTUFBTUMsV0FBVyxNQUFNRiw2Q0FBS0EsQ0FBQ0csR0FBRyxDQUFDLHNCQUFzQix3Q0FBd0M7UUFDL0YsT0FBT0QsU0FBU0UsSUFBSTtJQUN0QixFQUFFLE9BQU9DLE9BQU87UUFDZEMsUUFBUUQsS0FBSyxDQUFDLDZCQUE2QkE7UUFDM0MsTUFBTUE7SUFDUjtBQUNGLEVBQUUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ib29raW5nLXN5c3RlbS8uL3NyYy9hcHAvYXBpL3NxbGRhdGEuanM/NDA0NiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5cclxuZXhwb3J0IGNvbnN0IGZldGNoVXNlckRhdGEgPSBhc3luYyAoKSA9PiB7XHJcbiAgdHJ5IHtcclxuICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MuZ2V0KCdZT1VSX0FQSV9FTkRQT0lOVCcpOyAvLyBSZXBsYWNlIHdpdGggeW91ciBhY3R1YWwgQVBJIGVuZHBvaW50XHJcbiAgICByZXR1cm4gcmVzcG9uc2UuZGF0YTtcclxuICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgY29uc29sZS5lcnJvcignRXJyb3IgZmV0Y2hpbmcgdXNlciBkYXRhOicsIGVycm9yKTtcclxuICAgIHRocm93IGVycm9yO1xyXG4gIH1cclxufTsiXSwibmFtZXMiOlsiYXhpb3MiLCJmZXRjaFVzZXJEYXRhIiwicmVzcG9uc2UiLCJnZXQiLCJkYXRhIiwiZXJyb3IiLCJjb25zb2xlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/api/sqldata.js\n");
-
-/***/ }),
-
 /***/ "(ssr)/./src/app/home/page.js":
 /*!******************************!*\
   !*** ./src/app/home/page.js ***!
@@ -291,7 +159,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _api_sqldata_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/sqldata.js */ \"(ssr)/./src/app/api/sqldata.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/image */ \"(ssr)/./node_modules/next/image.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/navigation.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _public_edit_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../public/edit.png */ \"(ssr)/./public/edit.png\");\n/* harmony import */ var _public_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../public/logo.png */ \"(ssr)/./public/logo.png\");\n/* harmony import */ var _LanguageSwitcher__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../LanguageSwitcher */ \"(ssr)/./src/app/LanguageSwitcher.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\n\n\nconst HomePage = ()=>{\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_4__.useRouter)();\n    const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const fetchUser = async ()=>{\n            try {\n                const userData = await (0,_api_sqldata_js__WEBPACK_IMPORTED_MODULE_2__.fetchUserData)();\n                setUser(userData);\n            } catch (error) {}\n        };\n        fetchUser();\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                    className: \"logo-brand\",\n                    \"aria-label\": \"หน้าหลัก\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {\n                        className: \"logo-main\",\n                        src: _public_logo_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n                        alt: \"mysticnetwork_logo\",\n                        height: \"auto\",\n                        width: \"auto\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                        lineNumber: 31,\n                        columnNumber: 11\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 30,\n                    columnNumber: 9\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"title\",\n                    children: \"HELLO\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 33,\n                    columnNumber: 9\n                }, undefined),\n                user && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            children: [\n                                \"Email: \",\n                                user.email\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                            lineNumber: 36,\n                            columnNumber: 13\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            children: [\n                                \"Name: \",\n                                user.name\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                            lineNumber: 37,\n                            columnNumber: 13\n                        }, undefined)\n                    ]\n                }, void 0, true, {\n                    fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n                    lineNumber: 35,\n                    columnNumber: 11\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n            lineNumber: 29,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n        lineNumber: 28,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2hvbWUvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7OztBQUM0QztBQUNNO0FBQ25CO0FBQ2E7QUFDSTtBQUNKO0FBQ087QUFHbkQsTUFBTVEsV0FBVztJQUNmLE1BQU1DLFNBQVNMLDBEQUFTQTtJQUN4QixNQUFNLENBQUNNLE1BQU1DLFFBQVEsR0FBR1YsK0NBQVFBLENBQUM7SUFFakNELGdEQUFTQSxDQUFDO1FBQ1IsTUFBTVksWUFBWTtZQUNoQixJQUFJO2dCQUNGLE1BQU1DLFdBQVcsTUFBTVgsOERBQWFBO2dCQUNwQ1MsUUFBUUU7WUFDVixFQUFFLE9BQU9DLE9BQU8sQ0FDaEI7UUFDRjtRQUVBRjtJQUNGLEdBQUcsRUFBRTtJQUVMLHFCQUNFLDhEQUFDRztrQkFDQyw0RUFBQ0M7OzhCQUNDLDhEQUFDQztvQkFBRUMsV0FBVTtvQkFBYUMsY0FBVzs4QkFDbkMsNEVBQUNoQixtREFBS0E7d0JBQUNlLFdBQVU7d0JBQVlFLEtBQUtkLHdEQUFJQTt3QkFBRWUsS0FBSTt3QkFBcUJDLFFBQU87d0JBQU9DLE9BQU07Ozs7Ozs7Ozs7OzhCQUV2Riw4REFBQ0M7b0JBQUdOLFdBQVU7OEJBQVE7Ozs7OztnQkFDckJSLHNCQUNDLDhEQUFDTTs7c0NBQ0MsOERBQUNTOztnQ0FBRTtnQ0FBUWYsS0FBS2dCLEtBQUs7Ozs7Ozs7c0NBQ3JCLDhEQUFDRDs7Z0NBQUU7Z0NBQU9mLEtBQUtpQixJQUFJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNL0I7QUFFQSxpRUFBZW5CLFFBQVFBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ib29raW5nLXN5c3RlbS8uL3NyYy9hcHAvaG9tZS9wYWdlLmpzPzU4NDMiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnXHJcbmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7IGZldGNoVXNlckRhdGEgfSBmcm9tICcuLi9hcGkvc3FsZGF0YS5qcyc7IFxyXG5pbXBvcnQgSW1hZ2UgZnJvbSBcIm5leHQvaW1hZ2VcIjtcclxuaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJztcclxuaW1wb3J0IEVkaXRJY29uIGZyb20gJy4uLy4uLy4uL3B1YmxpYy9lZGl0LnBuZyc7XHJcbmltcG9ydCBMb2dvIGZyb20gJy4uLy4uLy4uL3B1YmxpYy9sb2dvLnBuZyc7XHJcbmltcG9ydCBMYW5ndWFnZVN3aXRjaGVyIGZyb20gJy4uL0xhbmd1YWdlU3dpdGNoZXInO1xyXG5cclxuXHJcbmNvbnN0IEhvbWVQYWdlID0gKCkgPT4ge1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG4gIGNvbnN0IFt1c2VyLCBzZXRVc2VyXSA9IHVzZVN0YXRlKG51bGwpO1xyXG5cclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgY29uc3QgZmV0Y2hVc2VyID0gYXN5bmMgKCkgPT4ge1xyXG4gICAgICB0cnkge1xyXG4gICAgICAgIGNvbnN0IHVzZXJEYXRhID0gYXdhaXQgZmV0Y2hVc2VyRGF0YSgpO1xyXG4gICAgICAgIHNldFVzZXIodXNlckRhdGEpO1xyXG4gICAgICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgICB9XHJcbiAgICB9O1xyXG5cclxuICAgIGZldGNoVXNlcigpO1xyXG4gIH0sIFtdKTsgXHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8bWFpbj5cclxuICAgICAgPGRpdj5cclxuICAgICAgICA8YSBjbGFzc05hbWU9XCJsb2dvLWJyYW5kXCIgYXJpYS1sYWJlbD1cIuC4q+C4meC5ieC4suC4q+C4peC4seC4gVwiPlxyXG4gICAgICAgICAgPEltYWdlIGNsYXNzTmFtZT1cImxvZ28tbWFpblwiIHNyYz17TG9nb30gYWx0PVwibXlzdGljbmV0d29ya19sb2dvXCIgaGVpZ2h0PVwiYXV0b1wiIHdpZHRoPVwiYXV0b1wiIC8+XHJcbiAgICAgICAgPC9hPlxyXG4gICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0aXRsZVwiPkhFTExPPC9oMT5cclxuICAgICAgICB7dXNlciAmJiAoXHJcbiAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8cD5FbWFpbDoge3VzZXIuZW1haWx9PC9wPlxyXG4gICAgICAgICAgICA8cD5OYW1lOiB7dXNlci5uYW1lfTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICl9XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9tYWluPlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBIb21lUGFnZTsiXSwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJmZXRjaFVzZXJEYXRhIiwiSW1hZ2UiLCJ1c2VSb3V0ZXIiLCJFZGl0SWNvbiIsIkxvZ28iLCJMYW5ndWFnZVN3aXRjaGVyIiwiSG9tZVBhZ2UiLCJyb3V0ZXIiLCJ1c2VyIiwic2V0VXNlciIsImZldGNoVXNlciIsInVzZXJEYXRhIiwiZXJyb3IiLCJtYWluIiwiZGl2IiwiYSIsImNsYXNzTmFtZSIsImFyaWEtbGFiZWwiLCJzcmMiLCJhbHQiLCJoZWlnaHQiLCJ3aWR0aCIsImgxIiwicCIsImVtYWlsIiwibmFtZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/home/page.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\nconst Home = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n            children: \"Main Home Page\"\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n            lineNumber: 7,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\tkkun\\\\OneDrive\\\\Documents\\\\GitHub\\\\Booking-System\\\\frontend\\\\src\\\\app\\\\home\\\\page.js\",\n        lineNumber: 6,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2hvbWUvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFDMEI7QUFFMUIsTUFBTUMsT0FBTztJQUNYLHFCQUNFLDhEQUFDQztrQkFDQyw0RUFBQ0M7c0JBQUc7Ozs7Ozs7Ozs7O0FBR1Y7QUFFQSxpRUFBZUYsSUFBSUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Jvb2tpbmctc3lzdGVtLy4vc3JjL2FwcC9ob21lL3BhZ2UuanM/NTg0MyJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCc7XHJcbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG5jb25zdCBIb21lID0gKCkgPT4ge1xyXG4gIHJldHVybiAoXHJcbiAgICA8ZGl2PlxyXG4gICAgICA8aDE+TWFpbiBIb21lIFBhZ2U8L2gxPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IEhvbWU7XHJcbiJdLCJuYW1lcyI6WyJSZWFjdCIsIkhvbWUiLCJkaXYiLCJoMSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/home/page.js\n");
 
 /***/ }),
 
@@ -346,28 +214,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "(ssr)/./public/edit.png":
-/*!*************************!*\
-  !*** ./public/edit.png ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/edit.3610138b.png\",\"height\":512,\"width\":512,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fedit.3610138b.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9wdWJsaWMvZWRpdC5wbmciLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsNExBQTRMIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYm9va2luZy1zeXN0ZW0vLi9wdWJsaWMvZWRpdC5wbmc/MTUzNSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvZWRpdC4zNjEwMTM4Yi5wbmdcIixcImhlaWdodFwiOjUxMixcIndpZHRoXCI6NTEyLFwiYmx1ckRhdGFVUkxcIjpcIi9fbmV4dC9pbWFnZT91cmw9JTJGX25leHQlMkZzdGF0aWMlMkZtZWRpYSUyRmVkaXQuMzYxMDEzOGIucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./public/edit.png\n");
-
-/***/ }),
-
-/***/ "(ssr)/./public/logo.png":
-/*!*************************!*\
-  !*** ./public/logo.png ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/logo.f4aa7725.png\",\"height\":213,\"width\":719,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f4aa7725.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":2});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9wdWJsaWMvbG9nby5wbmciLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsNExBQTRMIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYm9va2luZy1zeXN0ZW0vLi9wdWJsaWMvbG9nby5wbmc/MmY2ZCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvbG9nby5mNGFhNzcyNS5wbmdcIixcImhlaWdodFwiOjIxMyxcIndpZHRoXCI6NzE5LFwiYmx1ckRhdGFVUkxcIjpcIi9fbmV4dC9pbWFnZT91cmw9JTJGX25leHQlMkZzdGF0aWMlMkZtZWRpYSUyRmxvZ28uZjRhYTc3MjUucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjJ9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./public/logo.png\n");
-
-/***/ }),
-
 /***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-metadata-image-loader.js?type=favicon&segment=&basePath=&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js!./src/app/favicon.ico?__next_metadata__":
 /*!**************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-metadata-image-loader.js?type=favicon&segment=&basePath=&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js!./src/app/favicon.ico?__next_metadata__ ***!
@@ -386,7 +232,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/delayed-stream"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.js&appDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fhome%2Fpage&page=%2Fhome%2Fpage&appPaths=%2Fhome%2Fpage&pagePath=private-next-app-dir%2Fhome%2Fpage.js&appDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Ctkkun%5COneDrive%5CDocuments%5CGitHub%5CBooking-System%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

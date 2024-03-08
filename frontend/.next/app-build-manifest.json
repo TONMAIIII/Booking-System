@@ -23,10 +23,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/home/page.js"
     ],
-    "/not-found": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/page.js"
+    ],
+    "/th/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/th/page.js"
+    ],
+    "/home/[userId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/home/[userId]/page.js"
     ]
   }
 }

@@ -22,6 +22,21 @@ def get_mysql_connection():
         print(e)
         return None
 
+
+def authenticate_user(username, password):
+    try:
+        cursor = mysql.connection.cursor()
+        cursor.execute('SELECT id FROM user WHERE name = %s AND password = %s', (username, password))
+        user_id = cursor.fetchone()
+        cursor.close()
+        
+        return user_id
+
+    except Exception as e:
+        print(e)
+        return None
+
+
 @app.route('/api/login', methods=['OPTIONS'])
 def options():
     return jsonify({'success': True}), 200, {'Access-Control-Allow-Credentials': 'true'}
@@ -46,7 +61,12 @@ def login():
             session['userid'] = user[0]
             session['name'] = user[1]
             session['email'] = user[2]
+
+            response = jsonify({'success': True})
+            response.set_cookie('userid', str(user[0]))
+            
             return jsonify({'success': True}), 200, {'Access-Control-Allow-Credentials': 'true'}
+        
 
         return jsonify({'success': False}), 401, {'Access-Control-Allow-Credentials': 'true'}
 
