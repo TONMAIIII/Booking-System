@@ -5,7 +5,7 @@ import EditIcon from '../../../public/edit.png';
 import Logo from '../../../public/logo.png';
 import LanguageSwitcher from '../LanguageSwitcher';
 
-const ThPage = () => {
+const HomePage = () => {
   const router = useRouter();
 return (
     <main>  
@@ -28,4 +28,4 @@ return (
   );
 }
 
-export default ThPage;
+export default HomePage;
