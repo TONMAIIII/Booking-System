@@ -7,6 +7,8 @@ import CheckMark from '../../../../public/check-mark.png'
 import React from 'react';
 import { useRef, useState, useEffect, useContext } from 'react';
 
+import axios from '../../api/axios.js';
+
 
 export default function Login() {
   const router = useRouter();
@@ -18,6 +20,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
+  const LOGIN_URL = 'http://localhost:5000/api/login';
 
   useEffect(() => {
     userRef.current.focus();
@@ -30,14 +33,7 @@ useEffect(() => {
 const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        LOGIN_URL,
-        { username, password },
-        {
-          headers: { 'Content-Type': 'application/json' },
-          withCredentials: true,
-        }
-      );
+      const response = await axios.post("http://localhost:5000/api/login",{ username, password });
     
       console.log(response);
       console.log(JSON.stringify({ username, password }));
@@ -76,8 +72,10 @@ const handleSubmit = async (e) => {
               text: 'Invalid username or password. Please try again.',
             });
           }
+          // console.error(err);
     }
 }
+
   return (
     <main>
       <div>

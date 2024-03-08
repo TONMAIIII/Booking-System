@@ -12,20 +12,10 @@
       "static/css/app/en/login/page.css",
       "static/chunks/app/en/login/page.js"
     ],
-    "/en/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/en/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/th/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/th/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

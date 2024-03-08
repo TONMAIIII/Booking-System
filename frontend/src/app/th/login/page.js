@@ -24,6 +24,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
+  const LOGIN_URL = 'http://127.0.0.1:5000';
 
   useEffect(() => {
     userRef.current.focus();
